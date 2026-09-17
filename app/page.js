@@ -199,7 +199,6 @@ export default function Home() {
             <span className="font-extrabold text-sm text-emerald-100">Kisan Bazaar</span>
             <span className="text-xs text-emerald-400">• Empowering Farmers. Strengthening Communities. Growing Together.</span>
           </div>
-          <p className="text-xs text-emerald-300/80">Built with ❤️ for Agricultural Hackathon 2026 (Next.js + SQLite Backend)</p>
         </div>
       </footer>
 
