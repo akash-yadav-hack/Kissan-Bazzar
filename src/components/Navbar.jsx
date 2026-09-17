@@ -162,18 +162,19 @@ export function Navbar({ currentRole, setRole, activeTab, setActiveTab, unreadCh
               {isDarkMode ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-slate-700" />}
             </button>
 
-            {/* Server Auth User Button */}
+            {/* Auth User Button (Sign In / Sign Out) */}
             {currentUser ? (
               <div className="flex items-center gap-2">
-                <span className="text-xs font-extrabold px-3 py-1.5 bg-emerald-100 text-emerald-900 rounded-xl border border-emerald-300">
+                <span className="text-xs font-extrabold px-3 py-1.5 bg-emerald-100 text-emerald-900 dark:bg-slate-800 dark:text-emerald-400 rounded-xl border border-emerald-300 dark:border-slate-700">
                   {currentUser.name} ({currentUser.role})
                 </span>
                 <button
                   onClick={onLogout}
-                  className="p-1.5 text-slate-400 hover:text-rose-600 rounded-lg transition-colors"
+                  className="px-3 py-1.5 bg-rose-50 text-rose-700 dark:bg-rose-950/50 dark:text-rose-400 hover:bg-rose-600 hover:text-white dark:hover:bg-rose-600 dark:hover:text-white rounded-xl text-xs font-extrabold transition-all flex items-center gap-1.5 border border-rose-200 dark:border-rose-900/50"
                   title="Sign Out"
                 >
-                  <LogOut className="w-4 h-4" />
+                  <LogOut className="w-3.5 h-3.5" />
+                  Sign Out
                 </button>
               </div>
             ) : (
@@ -182,7 +183,7 @@ export function Navbar({ currentRole, setRole, activeTab, setActiveTab, unreadCh
                 className="px-3.5 py-1.5 bg-slate-900 dark:bg-emerald-600 hover:bg-slate-800 dark:hover:bg-emerald-700 text-white rounded-xl text-xs font-extrabold shadow-sm transition-all flex items-center gap-1.5"
               >
                 <User className="w-3.5 h-3.5" />
-                Server Sign In
+                Sign In
               </button>
             )}
           </div>
