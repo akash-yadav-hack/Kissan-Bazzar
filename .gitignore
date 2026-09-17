@@ -1,0 +1,12 @@
+node_modules
+.next/
+out/
+build/
+dist/
+dist-ssr/
+.DS_Store
+*.local
+.env
+.env*.local
+*.log
+kissan_bazar_server.db
